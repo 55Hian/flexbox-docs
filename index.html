@@ -57,10 +57,10 @@
         <article class="artigo-justify-content">
             <h3 class="titulo-de-artigo">justify-content: flex-start</h3>
             <p class="descricao-propriedade">
-                Valor padrão. Os itens são posicionados no início do contêiner
+                Propriedade utilizada junto ao display-flex, valor padrão. Os itens são posicionados no início do contêiner.
             </p>
             <p class="descricao-propriedade">
-                Algumas propriedades como flex-direction, justify-content e align-content ja vem com os valores padrões
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
             </p>
             <table class="tabela">
                 <tr>
@@ -96,10 +96,10 @@
         <article class="artigo-justify-content-flexend">
             <h3 class="titulo-de-artigo">justify-content: flex-end</h3>
             <p class="descricao-propriedade">
-                Valor padrão. Os itens são posicionados no início do contêiner
+                Propriedade utilizada junto ao display-flex. Alinhe os itens flexíveis na extremidade do contêiner.
             </p>
             <p class="descricao-propriedade">
-                Algumas propriedades como flex-direction, justify-content e align-content ja vem com os valores padrões
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
             </p>
             <table class="tabela">
                 <tr>
@@ -133,12 +133,12 @@
         </article>
 
         <article class="artigo-justify-content-center">
-            <h3 class="titulo-de-artigo">justify-content: flex-end</h3>
+            <h3 class="titulo-de-artigo">justify-content: center</h3>
             <p class="descricao-propriedade">
-                Valor padrão. Os itens são posicionados no início do contêiner
+                Propriedade utilizada junto ao display-flex. Os itens são posicionados no centro do contêiner
             </p>
             <p class="descricao-propriedade">
-                Algumas propriedades como flex-direction, justify-content e align-content ja vem com os valores padrões
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
             </p>
             <table class="tabela">
                 <tr>
@@ -168,9 +168,768 @@
                     <div class="contido">5</div>
                 </div>
             </div>
-
         </article>
 
+        <article class="artigo-justify-content-space-between">
+            <h3 class="titulo-de-artigo">justify-content: space-between</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Os itens terão espaço entre eles
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">space-between</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-justify-content-space-around">
+            <h3 class="titulo-de-artigo">justify-content: space-around</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Os itens terão espaço antes, entre e depois deles.
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">space-around</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-justify-content-space-evenly">
+            <h3 class="titulo-de-artigo">justify-content: space-evenly</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Os itens terão espaço igual ao seu redor.
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">space-evenly</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-justify-content-initial">
+            <h3 class="titulo-de-artigo">justify-content: initial</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Define a propriedade para seu valor padrão. 
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">initial</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-justify-content-inherit">
+            <h3 class="titulo-de-artigo">justify-content: inherit</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Herda as propriedade de seu elemento pai. 
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">inherit</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-flex-direction-row">
+            <h3 class="titulo-de-artigo">flex-direction: row</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Valor padrão. Os itens flexíveis são exibidos horizontalmente, como uma linha. 
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como justify-content e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-flex-direction-row-reverse">
+            <h3 class="titulo-de-artigo">flex-direction: row-reverse</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Igual à linha, mas na ordem inversa. 
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como justify-content e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row-reverse</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start **</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+            <p>** Como a referencia muda, o "justify-contente = flex-start" passsa a ser do lado direito.</p>
+        </article>
+
+        <article class="artigo-flex-direction-column">
+            <h3 class="titulo-de-artigo">flex-direction: column</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Os itens flexíveis são exibidos verticalmente, como uma coluna. 
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como justify-content e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">column</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-flex-direction-column-reverse">
+            <h3 class="titulo-de-artigo">flex-direction: column-reverse</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Igual à coluna, mas na ordem inversa. 
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como justify-content e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">column-reverse</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-flex-direction-initial">
+            <h3 class="titulo-de-artigo">flex-direction: initial</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Define esta propriedade com seu valor padrão. 
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como justify-content e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">initial</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-flex-direction-inherit">
+            <h3 class="titulo-de-artigo">flex-direction: inherit</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Herda a propriedade de seu elemento pai. 
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como justify-content e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">inherit</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-normal">
+            <h3 class="titulo-de-artigo">align-itens: normal</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Padrão. Comporta-se como 'esticar' para flexbox e itens de grade, ou 'iniciar' para itens de grade com um tamanho de bloco definido.
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">normal</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-stretch">
+            <h3 class="titulo-de-artigo">align-itens: stretch</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. Os itens são esticados para caber no contêiner
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">stretch</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-center">
+            <h3 class="titulo-de-artigo">align-itens: center</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. yhuuuuuuuuuuuuuuuuuuuuuuuujlghlgtlghllg
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">center</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-flex-start">
+            <h3 class="titulo-de-artigo">align-itens: flex-start</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. yhuuuuuuuuuuuuuuuuuuuuuuuujlghlgtlghllg
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-flex-end">
+            <h3 class="titulo-de-artigo">align-itens: flex-end</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. yhuuuuuuuuuuuuuuuuuuuuuuuujlghlgtlghllg
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">flex-end</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-start">
+            <h3 class="titulo-de-artigo">align-itens: start</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. yhuuuuuuuuuuuuuuuuuuuuuuuujlghlgtlghllg
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">start</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-end">
+            <h3 class="titulo-de-artigo">align-itens: end</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. yhuuuuuuuuuuuuuuuuuuuuuuuujlghlgtlghllg
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">end</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-baseline">
+            <h3 class="titulo-de-artigo">align-itens: baseline</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. yhuuuuuuuuuuuuuuuuuuuuuuuujlghlgtlghllg
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">baseline</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="artigo-align-itens-initial">
+            <h3 class="titulo-de-artigo">align-itens: initial</h3>
+            <p class="descricao-propriedade">
+                Propriedade utilizada junto ao display-flex. yhuuuuuuuuuuuuuuuuuuuuuuuujlghlgtlghllg
+            </p>
+            <p class="descricao-propriedade">
+                Algumas propriedades como flex-direction e align-content ja vem com os valores padrões
+            </p>
+            <table class="tabela">
+                <tr>
+                    <th class="propriedade">Propriedades</th>
+                    <th class="valor">Valor</th>
+                </tr>
+                <tr>
+                    <td class="propriedade">flex-direction</td>
+                    <td class="valor">row</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">justify-content</td>
+                    <td class="valor">flex-start</td>
+                </tr>
+                <tr>
+                    <td class="propriedade">align-content</td>
+                    <td class="valor">initial</td>
+                </tr>
+            </table>
+            <p>Exemplo:</p>
+            <div class="exemplo">
+                <div class="container">
+                    <div class="contido">1</div>
+                    <div class="contido">2</div>
+                    <div class="contido">3</div>
+                    <div class="contido">4</div>
+                    <div class="contido">5</div>
+                </div>
+            </div>
+        </article>
     </section>
 </body>
 
