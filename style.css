@@ -51,6 +51,10 @@ article{
     margin: 50px 0px;
 }
 
+article p{
+    text-align: center;
+}
+
 .tabela{
     margin: 50px;
     display: flex;
@@ -90,7 +94,7 @@ article{
 }
 
 .exemplo .container{
-    height: 300px;
+    height: 550px;
     background-color: var(--cor-fundo-primaria);
     border: 1px dashed var(--cor-secundaria);
     display: flex;
@@ -119,3 +123,85 @@ article{
 .artigo-justify-content-center .container{
     justify-content: center;
 }
+
+.artigo-justify-content-space-between .container{
+    justify-content: space-between;
+}
+
+.artigo-justify-content-space-around .container{
+    justify-content: space-around;
+}
+
+.artigo-justify-content-space-evenly .container{
+    justify-content: space-evenly;
+}
+
+.artigo-justify-content-initial .container{
+    justify-content: initial;
+}
+
+.artigo-justify-content-inherit .container{
+    justify-content: inherit;
+}
+
+.artigo-justify-content-inherit .container{
+    flex-direction: row;
+}
+
+
+.artigo-flex-direction-row-reverse .container{
+    flex-direction: row-reverse;
+}
+
+.artigo-flex-direction-column .container{
+    flex-direction: column;
+}
+
+.artigo-flex-direction-column-reverse .container{
+    flex-direction: column-reverse;
+}
+
+.artigo-flex-direction-initial .container{
+    flex-direction: initial;
+}
+
+.artigo-flex-direction-inherit .container{
+    flex-direction: inherit;
+}
+
+.artigo-align-itens-normal .container{
+    align-items: normal;
+}
+
+.artigo-align-itens-stretch .container{
+    align-items: stretch;
+}
+
+.artigo-align-itens-center .container{
+    align-items: center;
+}
+
+.artigo-align-itens-flex-start .container{
+    align-items: flex-start;
+}
+
+.artigo-align-itens-flex-end .container{
+    align-items: flex-end;
+}
+
+.artigo-align-itens-start .container{
+    align-items: start;
+}
+
+.artigo-align-itens-end .container{
+    align-items: end;
+}
+
+.artigo-align-itens-baseline .container{
+    align-items: baseline;
+}
+
+.artigo-align-itens-initial .container{
+    align-items: initial;
+}
+
