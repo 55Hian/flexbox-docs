@@ -1,14 +1,9 @@
 :root{
-    --cor-principal-primararia: rgb(47,110,31);
-    --cor-principal-secundaria: rgb(229,200,0);    
-    --cor-fundo-primaria: #d6dfd4;
-    --cor-fundo-secundaria: #f2cb05; 
-    --cor-primaria: #3F3F3E;
-    --cor-secundaria: #6f8d2b;
-    --cor-terciaria: #f2cb05;
-    --cor-quartenaria: rgb(96,198,241);
-    --cor-quintenaria: #732C02;
-    --cor-texto-paragrafos: #ffffff;
+    --cor-principal-primararia: #69d2cd;
+    --cor-principal-secundaria: #b9f1d6;    
+    --cor-fundo-primaria:  #0d0f36;
+    --cor-fundo-secundaria: #294380; 
+    --cor-texto-paragrafos: #f1f6ce;
     --fonte-primaria: 'Times New Roman', serif;
     --fonte-secundaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -21,38 +16,92 @@ body{
     
 }
 
+p{
+    color: var(--cor-texto-paragrafos);
+    line-height: 1.5;
+}
+
+/* Configurações do menu principal de navegação */
+.menu-principal{
+    margin: 40px 0;
+}
+.menu-principal ul{
+    padding: 0px;
+    border-radius: 0px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-principal a{
+    text-decoration: none;
+    color: initial;
+
+    color: var(--cor-principal-primararia);
+    font-family: var(--fonte-secundaria);
+    padding: 0 30px;
+    transition: background-color .40s, font-size .40s;
+
+}
+
+.menu-principal li{
+    display: flex;
+    line-height: 60px;
+}
+
+a:hover{
+    color: var(--cor-principal-secundaria);
+    font-weight: 700;
+    background-color: var(--cor-fundo-secundaria);
+    font-size: 120%;
+    border-radius: 15px;
+}
+
 .titulo-pagina{
     text-align: center;
     font-size: 24pt;
-    color: var(--cor-quintenaria);
+    color: var(--cor-texto-paragrafos);
     font-weight: bold;
     line-height: 2;
 }
 
 .subtitulo-pagina{
-    font-size: 20pt;
-    color: var(--cor-quintenaria);
+    font-size: 22pt;
+    color: var(--cor-texto-paragrafos);
     text-align: center;
-    line-height: 1.5;
+    line-height: 2.5;
+    font-weight: bold;
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+header .subtitulo-pagina{
+
+    background-color:transparent;
+
 }
 
 .titulo-de-artigo{
     text-align: center;
-    font-size: 16pt;
-    color: var(--cor-secundaria);
+    font-size: 20pt;
+    color: var(--cor-texto-paragrafos);
     font-weight: bold;
     line-height: 1.5;
+    
 }
 
 article{
-    border: 5px solid var(--cor-primaria);
+    border: 5px solid var(--cor-fundo-secundaria);
     padding: 25px;
     border-radius: 25px;
-    margin: 50px 0px;
+    margin: 50px 10px;
+    width: 50%;
 }
 
 article p{
     text-align: center;
+    
 }
 
 .tabela{
@@ -66,19 +115,20 @@ article p{
     border-collapse: collapse; /*define a separação entre as bordar*/
     padding: 10px;
     text-align: center;
-    border: 1px solid #000;    
+    border: 1px solid var(--cor-fundo-primaria);    
     text-align: center;
     width: 200px;
 }
 
 .tabela th{
-    background-color: var(--cor-principal-primararia);
-    color: var(--cor-texto-paragrafos);
+    background-color: var(--cor-fundo-secundaria);
+    color: var(--cor-principal-secundaria);
     padding: 15px;
 }
 
 .tabela td{
     background-color: var(--cor-fundo-secundaria);
+    color: var(--cor-texto-paragrafos);
 }
 
 .descricao-propriedades{
@@ -90,13 +140,13 @@ article p{
     padding: 50px;
     background-color: var(--cor-fundo-secundaria);
     border-radius: 25px;
-    border: 3px solid var(--cor-secundaria);
+    border: 3px solid var(--cor-principal-secundaria);
 }
 
 .exemplo .container{
-    height: 550px;
+    height: 650px;
     background-color: var(--cor-fundo-primaria);
-    border: 1px dashed var(--cor-secundaria);
+    border: 3px dashed var(--cor-fundo-secundaria);
     display: flex;
     border-radius: 15px;
 }
@@ -104,12 +154,18 @@ article p{
 .exemplo .contido{
     width: 100px;
     height: 100px;
-    background-color: var(--cor-quartenaria);
-    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-fundo-secundaria);
+    border: 2px solid var(--cor-principal-secundaria);
     border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: var(--cor-texto-paragrafos);
+}
+
+.artigos-lado-a-lado{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .artigo-justify-content .container{
@@ -205,3 +261,147 @@ article p{
     align-items: initial;
 }
 
+.artigo-align-itens-inherit .container{
+    align-items: inherit;
+}
+
+.artigo-flex-nowrap .container{
+    flex-wrap: nowrap;
+}
+
+.artigo-flex-wrap .container{
+    flex-wrap: wrap;
+}
+
+.artigo-flex-wrap-reverse .container{
+    flex-wrap: wrap-reverse;
+}
+
+.artigo-flex-initial .container{
+    flex-wrap: initial;
+}
+
+.artigo-flex-inherit .container{
+    flex-wrap: inherit;
+}
+
+.artigo-flex-flow-row-nowrap .container{
+    flex-flow: row nowrap;
+}
+
+.artigo-flex-flow-row-wrap .container{
+    flex-flow: row wrap;
+}
+
+.artigo-flex-flow-row-wrap-reverse .container{
+    flex-flow: row wrap-reverse;
+}
+
+.artigo-flex-flow-row-initial .container{
+    flex-flow: row initial;
+}
+
+.artigo-flex-flow-row-inherit .container{
+    flex-flow: row inherit;
+}
+
+.artigo-flex-flow-row-reverse-nowrap .container{
+    flex-flow: row-reverse nowrap;
+}
+
+.artigo-flex-flow-row-reverse-wrap .container{
+    flex-flow: row-reverse wrap;
+}
+
+.artigo-flex-flow-row-reverse-wrap-reverse .container{
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.artigo-flex-flow-row-reverse-initial .container{
+    flex-flow: row-reverse initial;
+}
+
+.artigo-flex-flow-row-reverse-inherit .container{
+    flex-flow: row-reverse inherit;
+}
+
+.artigo-flex-flow-column-nowrap .container{
+    flex-flow: column nowrap;
+}
+
+.artigo-flex-flow-column-wrap .container{
+    flex-flow: column wrap;
+}
+
+.artigo-flex-flow-column-wrap-reverse .container{
+    flex-flow: column wrap-reverse;
+}
+
+.artigo-flex-flow-column-initial .container{ 
+    flex-flow: column initial;
+}
+
+.artigo-flex-flow-column-inherit .container{
+    flex-flow: column inherit;
+}
+
+.artigo-flex-flow-column-reverse-nowrap .container{
+    flex-flow: column-reverse nowrap;
+}
+
+.artigo-flex-flow-column-reverse-wrap .container{
+    flex-flow: column-reverse wrap;
+}
+
+.artigo-flex-flow-column-reverse-wrap-reverse .container{
+    flex-flow: column-reverse wrap-reverse;
+}
+
+.artigo-flex-flow-column-reverse-initial .container{
+    flex-flow: column-reverse initial;
+}
+
+.artigo-flex-flow-column-reverse-inherit .container{
+    flex-flow: column-reverse inherit;
+}
+
+.artigo-flex-flow-initial-nowrap .container{
+    flex-flow: initial nowrap;
+}
+
+.artigo-flex-flow-initial-wrap .container{
+    flex-flow: initial wrap;
+}
+
+.artigo-flex-flow-initial-wrap-reverse .container{
+    flex-flow: initial wrap-reverse;
+}
+
+.artigo-flex-flow-initial-initial .container{
+    flex-flow: initial initial;
+}
+
+.artigo-flex-flow-initial-inherit .container{
+    flex-flow: initial inherit;
+}
+
+
+.artigo-flex-flow-inherit-nowrap .container{
+    flex-flow: inherit nowrap;
+}
+
+.artigo-flex-flow-inherit-wrap .container{
+    flex-flow: inherit wrap;
+}
+
+.artigo-flex-flow-inherit-wrap-reverse .container{
+    flex-flow: inherit wrap-reverse;
+}
+
+.artigo-flex-flow-inherit-initial .container{
+    flex-flow: inherit initial;
+}
+
+.artigo-flex-flow-inherit-inherit .container{
+    flex-flow: inherit inherit;
+}
