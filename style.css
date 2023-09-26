@@ -96,7 +96,7 @@ article{
     padding: 25px;
     border-radius: 25px;
     margin: 50px 10px;
-    width: 50%;
+    width: 45%;
 }
 
 article p{
@@ -163,9 +163,19 @@ article p{
     color: var(--cor-texto-paragrafos);
 }
 
+.exemplo .contido:hover{
+    background-image: url(./the_rock.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px dashed greenyellow;
+    font-weight: bold;
+    color: greenyellow;
+}
+
 .artigos-lado-a-lado{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .artigo-justify-content .container{
@@ -404,4 +414,39 @@ article p{
 
 .artigo-flex-flow-inherit-inherit .container{
     flex-flow: inherit inherit;
+}
+
+.artigo-align-content-stretch .container{
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.artigo-align-content-center .container{
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.artigo-align-content-flex-start .container{
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.artigo-align-content-flex-end .container{
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.artigo-align-content-space-between .container{
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.artigo-align-content-space-around .container{
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.artigo-align-content-space-evenly .container{
+    flex-wrap: wrap;
+    align-content: space-evenly;
 }
