@@ -24,6 +24,7 @@ p{
 /* Configurações do menu principal de navegação */
 .menu-principal{
     margin: 40px 0;
+    
 }
 .menu-principal ul{
     padding: 0px;
@@ -183,7 +184,6 @@ article p{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
 
 
 .artigo-justify-content .container{
