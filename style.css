@@ -19,6 +19,7 @@ body{
 p{
     color: var(--cor-texto-paragrafos);
     line-height: 1.5;
+    text-align: center;
 }
 
 /* Configurações do menu principal de navegação */
@@ -102,7 +103,7 @@ article{
 }
 
 article p{
-    text-align: center;
+    text-align: justify;
     
 }
 
@@ -243,43 +244,51 @@ article p{
     flex-direction: inherit;
 }
 
-.artigo-align-itens-normal .container{
+.artigo-align-items-normal .container{
     align-items: normal;
 }
 
-.artigo-align-itens-stretch .container{
+.artigo-align-items-stretch .container{
     align-items: stretch;
 }
 
-.artigo-align-itens-center .container{
+.artigo-align-items-stretch .contido{
+    height: auto;
+}
+
+.artigo-align-items-stretch .container{
+    height: 85px;
+}
+
+.artigo-Align-items-center .container{
     align-items: center;
 }
 
-.artigo-align-itens-flex-start .container{
+.artigo-Align-items-flex-start .container{
     align-items: flex-start;
 }
 
-.artigo-align-itens-flex-end .container{
+.artigo-Align-items-flex-end .container{
     align-items: flex-end;
 }
 
-.artigo-align-itens-start .container{
+.artigo-align-items-start .container{
     align-items: start;
 }
 
-.artigo-align-itens-end .container{
+.artigo-Align-items-end .container{
     align-items: end;
 }
 
-.artigo-align-itens-baseline .container{
+.artigo-Align-items-baseline .container{
     align-items: baseline;
 }
 
-.artigo-align-itens-initial .container{
+.artigo-Align-items-initial .container{
     align-items: initial;
 }
 
-.artigo-align-itens-inherit .container{
+.artigo-Align-items-inherit .container{
     align-items: inherit;
 }
 
